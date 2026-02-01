@@ -1,13 +1,14 @@
 /* ---------- LOGS PAGE ---------- */
 const logs = [
-  "[INFO] Booting Relationship Monitor...",
-  "[INFO] Loading emotional dependencies...",
-  "[WARNING] Girlfriend too cute for current configuration",
-  "[INFO] Running compatibility checks...",
-  "[ERROR] Valentine's Date not found",
-  "[INFO] Boyfriend experiencing emotional dependency",
-  "[CRITICAL] Immediate action required"
+  "[INFO] Booting Relationship Monitor... Hope gabasu doesn’t notice the bugs 🤞",
+  "[INFO] Loading emotional dependencies... Please don't crash, Mallu queen 👑",
+  "[WARNING] Girlfriend (gabasu) too cute for this simple Gujju boy’s codebase 😵‍💫",
+  "[INFO] Running compatibility checks... Fingers crossed Mallu magic > Gujju logic",
+  "[ERROR] Valentine’s Date not found — maybe because I’m still debugging my courage 😳",
+  "[INFO] Boyfriend (that’s me) stuck in infinite loop of thoughts about gabasu 💭",
+  "[CRITICAL] Immediate action required — must impress before gabasu bugs out!"
 ];
+
 
 const terminal = document.getElementById("terminal");
 const runFixBtn = document.getElementById("runFixBtn");
@@ -89,4 +90,5 @@ function activateRejectDodge() {
     rejectBtn.style.top = y + "px";
   });
 }
+
 
