@@ -1,0 +1,255 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Consolas, monospace;
+}
+
+/* Dark mode base */
+body.dark {
+  background: #0d1117;
+  color: #c9d1d9;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Layout */
+.container {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Headline */
+.alert {
+  color: #ff5555;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.6;
+  }
+}
+
+/* Subtext */
+.subtext {
+  color: #8b949e;
+  margin-bottom: 2.5rem;
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.card {
+  background: #161b22;
+  padding: 1.2rem;
+  border-radius: 8px;
+  width: 30%;
+}
+
+.card.error {
+  border: 1px solid #ff5555;
+}
+
+.label {
+  display: block;
+  color: #8b949e;
+  font-size: 0.85rem;
+}
+
+.value {
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+}
+
+/* Button */
+.primary-btn {
+  display: inline-block;
+  padding: 0.9rem 1.8rem;
+  background: #238636;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: background 0.2s ease;
+}
+
+.primary-btn:hover {
+  background: #2ea043;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #6e7681;
+  margin-bottom: 1rem;
+}
+
+footer span {
+  color: #ff79c6;
+}
+/* Terminal */
+.terminal-container {
+  width: 80%;
+  max-width: 900px;
+  margin: auto;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #010409;
+  border: 1px solid #30363d;
+}
+
+.terminal-header {
+  background: #161b22;
+  padding: 0.6rem 1rem;
+  font-size: 0.85rem;
+  color: #c9d1d9;
+}
+
+.terminal-body {
+  padding: 1rem;
+  height: 350px;
+  overflow-y: auto;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #58a6ff;
+}
+
+.terminal-footer {
+  padding: 1rem;
+  text-align: right;
+}
+
+.hidden {
+  display: none;
+}
+/* Loader */
+.loader-wrapper {
+  margin: 3rem auto;
+  max-width: 500px;
+}
+
+.loader-bar {
+  background: #161b22;
+  border-radius: 6px;
+  overflow: hidden;
+  height: 20px;
+  margin-bottom: 1rem;
+}
+
+.loader-progress {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #ff79c6, #ff5555);
+  transition: width 0.4s ease;
+}
+
+.status-text {
+  color: #8b949e;
+  font-size: 0.9rem;
+}
+/* Romantic mode */
+body.romantic {
+  background: linear-gradient(135deg, #ffe4ec, #ffd1dc);
+  font-family: "Poppins", Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.result-container {
+  background: white;
+  padding: 3rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  z-index: 2;
+}
+
+.success-title {
+  color: #ff4d6d;
+  margin-bottom: 1rem;
+}
+
+.question {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.actions button {
+  border: none;
+  padding: 0.8rem 1.4rem;
+  margin: 0 0.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.approve-btn {
+  background: #ff4d6d;
+  color: white;
+}
+
+.reject-btn {
+  background: #ddd;
+}
+
+/* Floating hearts */
+.hearts::before {
+  content: "💖 💕 💘 💗 💓";
+  position: absolute;
+  font-size: 2rem;
+  animation: float 10s linear infinite;
+  opacity: 0.6;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(100vh);
+  }
+  100% {
+    transform: translateY(-100vh);
+  }
+}
+/* Success page */
+.success-terminal {
+  color: #7ee787;
+}
+
+.success-msg {
+  color: #ff79c6;
+  font-size: 1.1rem;
+}
+.reject-btn {
+  position: absolute;
+  background: #ddd;
+}
+/* Image gallery */
+.gallery {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 180px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
